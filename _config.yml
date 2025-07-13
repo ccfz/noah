@@ -16,5 +16,5 @@ navigation:
   - title: Home
     url: /
 
-gems:
+plugins:
   - jekyll-seo-tag
