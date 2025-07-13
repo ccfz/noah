@@ -7,7 +7,6 @@ body {
   margin: 0;
   padding: $spacing-sm;
   min-height: 100vh;
-  @include flex-column($gap: 0, $align: stretch);
 }
 
 a, a:visited {
@@ -20,7 +19,7 @@ a:hover, a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $title-color;
+  color: $primary-color;
 }
 
 // Section Styles
@@ -31,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .introduction > div {
   font-size: 1.125rem;
-  color: $secondary-color;
+  color: $primary-color;
   max-width: 60ch;
 }
 
@@ -47,76 +46,76 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  @include flex-column($gap: $spacing-xs);
-  @include section-spacing;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-.logo > div:first-child {
+.logo img {
+  width: 10%;
+  height: auto;
+  max-width: 10%;
+}
+
+.logo-tile {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 300;
   color: $primary-color;
+
 }
 
-.logo > div:last-child {
+.logo-subtile {
+  padding-top: $spacing-xs;
   font-size: 1.2rem;
-  color: $secondary-color;
+  color: $primary-color;
 }
 
 .contact {
   @include section-spacing;
-  padding: $spacing-xl 0;
-  border-top: 1px solid rgba($line-color, 0.3);
   display: flex;
   flex-wrap: wrap;
   gap: $spacing-xl;
   max-width: 50rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  border-top: 1px solid $primary-color;
 }
 
-.contact > div:first-child {
+.contact > div {
   flex: 1;
   min-width: 20rem;
-  @include flex-column($gap: $spacing-sm, $align: stretch);
+  @include flex-column($gap: $spacing-sm);
+
+  .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .contact-info {
+    color: $accent-color;
+    text-decoration: underline;
+  }
+
+  img {
+    width: 11.25rem;
+    height: auto;
+  }
+
+  .connect-text {
+    font-weight: bold;
+    margin-top: $spacing-sm;
+  }
+
 }
 
-.contact > div:first-child > div:first-child {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: $primary-color;
+.contact-padding {
+  padding-top: $spacing-sm;
 }
 
-.contact > div:first-child > div:nth-child(2) {
-  color: $secondary-color;
-}
-
-.contact > div:first-child > div:nth-child(3) {
-  font-weight: bold;
-  color: $primary-color;
-  margin-top: $spacing-sm;
-}
-
-.contact > div:first-child > div:nth-child(4),
-.contact > div:first-child > div:nth-child(5) {
-  color: $accent-color;
-  text-decoration: underline;
-}
-
-.contact > div:last-child {
-  flex: 1;
-  min-width: 20rem;
-  @include flex-column($gap: $spacing-md);
-}
-
-.contact > div:last-child img {
-  width: 11.25rem;
-  height: auto;
-}
-
-.contact > div:last-child > div:last-child {
-  font-size: 0.875rem;
-  color: $secondary-color;
-  text-align: left;
+.vertical-divider {
+  width: 1px;
+  height: 100%;
+  background-color: $primary-color;
 }
 
 @media (max-width: 768px) {
@@ -133,4 +132,8 @@ h1, h2, h3, h4, h5, h6 {
   .contact > div:last-child {
     min-width: auto;
   }
+}
+
+.border-right {
+  border-right: 1px solid $primary-color;
 }

@@ -3,10 +3,9 @@ layout: default
 title: Noah Schlosser
 ---
 
-<div class="logo">
-  <div>Noah Schlosser</div>
-  <div>Somatic Bodywork and Deep Massages</div>
 
+<div style="display: flex; justify-content: center;">
+  {% include logo.html %}
 </div>
 
 <section class="introduction">
@@ -66,15 +65,14 @@ title: Noah Schlosser
 </section>
 
 <section class="contact">
-  <div>
-    <div>Noah Schlosser</div>
-    <div>Somatic Bodywork and Massages</div>
-    <div>Let us connect:</div>
-    <div>+49 1721899287</div>
-    <div>info@noahschlosser.de</div>
+  <div class="border-right contact-padding">
+    {% include logo.html %}
+    <div><strong>Let us connect:</strong></div>
+    <div><a href="tel:+491721899287">+49 1721899287</a></div>
+    <div><a href="mailto:info@noahschlosser.de">info@noahschlosser.de</a></div>
   </div>
-  <div>
+  <div class="contact-padding">
     <img src="assets/images/pantarei-logo.png" alt="Pantarei Approach Student Logo">
-    <div>The services offered here do not constitute medical, psychotherapeutic, or healing treatments as defined by the German Heilpraktikergesetz (Healing Practitioners Act). No promises of healing are made. These sessions are not a substitute for medical or psychological diagnosis or treatment.</div>
+    <div class="disclaimer">The services offered here do not constitute medical, psychotherapeutic, or healing treatments as defined by the German Heilpraktikergesetz (Healing Practitioners Act). No promises of healing are made. These sessions are not a substitute for medical or psychological diagnosis or treatment.</div>
   </div>
 </section>

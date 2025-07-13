@@ -24,7 +24,7 @@
   cursor: pointer;
   font-size: 1rem;
   font-weight: 500;
-  color: $secondary-color;
+  color: $primary-color;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -72,13 +72,13 @@
 
 .service-content p {
   font-size: 1rem;
-  color: $secondary-color;
+  color: $primary-color;
 }
 
 .service-duration {
   margin-top: $spacing-lg;
   padding-top: $spacing-md;
-  border-top: 1px solid rgba($line-color, 0.3);
+  border-top: 1px solid rgba($primary-color, 0.3);
   @include flex-column($gap: $spacing-xs, $align: stretch);
 }
 
@@ -96,7 +96,7 @@
 .services h2 {
   font-size: 3rem;
   font-weight: bold;
-  color: $title-color;
+  color: $primary-color;
 }
 
 @media (max-width: 768px) {
