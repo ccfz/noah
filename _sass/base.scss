@@ -1,0 +1,44 @@
+$primary-color: #333333;
+$secondary-color: #666666;
+$accent-color: #007bff;
+
+$text-color: #333333;
+
+body {
+  font-family: Arial, sans-serif;
+  color: $text-color;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 20px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content > div {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.content > div:first-child {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: $primary-color;
+  margin-bottom: 40px;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .content > div:first-child {
+    font-size: 2rem;
+  }
+}
