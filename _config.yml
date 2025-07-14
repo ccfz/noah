@@ -2,7 +2,7 @@ title: Noah Schlosser - Somatic Bodywork and Deep Massages
 email:
 description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ccfz.github.io/noah/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 sass:
